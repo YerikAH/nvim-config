@@ -12,10 +12,37 @@ set showmatch
 set sw=2
 set relativenumber
 let mapleader=" "
+set laststatus=2
+set backspace=2
+set guioptions-=T
+set guioptions-=L
+let g:indentLine_enabled = 1
+let g:indentLine_char = '▏'
+let g:indentLine_faster = 1
+colorscheme embark
 
-"Theme
-colorscheme catppuccin-mocha " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-
-"Config
+" Config
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
+
+nnoremap <silent><leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
+nnoremap <silent><leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
+nnoremap <silent><leader>3 <Cmd>BufferLineGoToBuffer 3<CR>
+nnoremap <silent><leader>4 <Cmd>BufferLineGoToBuffer 4<CR>
+nnoremap <silent><leader>5 <Cmd>BufferLineGoToBuffer 5<CR>
+nnoremap <silent><leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
+nnoremap <silent><leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
+nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
+nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+"Coc plugins
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-css', 'coc-styled-components']
+
+
+" Buffer config
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
