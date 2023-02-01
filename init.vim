@@ -24,6 +24,7 @@ colorscheme embark
 " Config
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>w :w<CR>
 
 nnoremap <silent><leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
 nnoremap <silent><leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
@@ -38,8 +39,7 @@ nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 "Coc plugins
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-css', 'coc-styled-components']
-
+let g:coc_global_extensions = ['coc-flutter']
 
 " Buffer config
 set termguicolors
