@@ -19,7 +19,12 @@ set guioptions-=L
 let g:indentLine_enabled = 1
 let g:indentLine_char = '▏'
 let g:indentLine_faster = 1
-colorscheme embark
+
+" Theme
+colorscheme tokyonight-night
+
+" Aireline Theme
+let g:airline_theme='catppuccin'
 
 " Config
 nmap <Leader>s <Plug>(easymotion-s2)

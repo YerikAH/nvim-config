@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Themes
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " Easy motion
 Plug 'easymotion/vim-easymotion'
@@ -31,6 +32,8 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 " IDE
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Transparent background
+Plug 'tribela/vim-transparent'
 
 call plug#end()
 
