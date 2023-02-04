@@ -26,14 +26,17 @@ Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 
 " Buffer
-Plug 'ryanoasis/vim-devicons'
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
 " IDE
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 
 " Transparent background
 Plug 'tribela/vim-transparent'
+
 
 call plug#end()
 

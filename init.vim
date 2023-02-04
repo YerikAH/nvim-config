@@ -43,8 +43,16 @@ nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
-"Coc plugins
-let g:coc_global_extensions = ['coc-flutter']
+" Coc plugins
+let g:coc_global_extensions = ['coc-flutter', 'coc-snippets']
+
+" Telescope config
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>fb",
+  ":Telescope file_browser",
+  { noremap = true }
+)
 
 " Buffer config
 set termguicolors
